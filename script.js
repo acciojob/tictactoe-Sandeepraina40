@@ -1,8 +1,9 @@
 //your JS code here. If required.
 // Grab references to the inputs and buttons from the DOM
-const name1Input = document.getElementById('player-1'); // Player 1 name input
-const name2Input = document.getElementById('player-2'); // Player 2 name input
-const submitBtn  = document.getElementById('submit');   // "Start Game" button
+const name1Input = document.getElementById('player1'); // Player 1 name input
+const name2Input = document.getElementById('player2'); // Player 2 name input
+const submitBtn  = document.getElementById('submit');  // "Start Game" button
+
 
 // Grab references to the game section and UI elements on the board page
 const gameSection = document.querySelector('.game');    // The hidden game area
