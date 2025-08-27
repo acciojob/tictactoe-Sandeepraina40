@@ -1,1 +1,92 @@
-/*  your css code here. If applicable */
+/* Center everything on the page */
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Main container */
+.container {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  text-align: center;
+  width: 320px;
+}
+
+/* Player input section */
+.player-inputs {
+  margin-bottom: 20px;
+}
+
+.player-inputs label {
+  display: block;
+  margin: 8px 0 4px;
+  font-weight: bold;
+}
+
+.player-inputs input {
+  width: 90%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.player-inputs button {
+  padding: 10px 20px;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.player-inputs button:hover {
+  background: #2980b9;
+}
+
+/* Game board section */
+.game h1 {
+  margin-bottom: 10px;
+}
+
+.message {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Tic Tac Toe grid */
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+/* Each cell */
+.cell {
+  background: #f9f9f9;
+  border: 2px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cell:hover {
+  background: #e0e0e0;
+}
