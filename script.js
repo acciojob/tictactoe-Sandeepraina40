@@ -48,7 +48,7 @@ function onCellClick(e) {                                // Fired when a cell is
   const index = parseInt(cell.id, 10) - 1;               // Convert cell id (1..9) -> index (0..8)
   if (board[index]) return;                              // If already filled, do nothing
 
-  const mark = isXTurn ? 'X' : 'O';                      // Decide whether to place X or O
+  const mark = isXTurn ? 'x' : 'o';                      // Decide whether to place X or O
   board[index] = mark;                                   // Update the board state
   cell.textContent = mark;                               // Show the mark in the UI
 
